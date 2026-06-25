@@ -13,6 +13,8 @@
     background-position: center;
     background-size: cover;
 }
+
+
 nav img{
     width: 150px;
     height: 80px;
@@ -150,15 +152,61 @@ nav .fa{
 
 h1{
     font-size: 36px;
-    color:#16a4cb;
     font-weight: 600;
 }
+
+.header h1{
+    color:#d9e5e9;
+}
+.header h3{
+    font-size: 24px;
+}
+
+.about h1{
+    color:#16a4cb;
+}
+.presidents h1{
+    color:#16a4cb;
+}
+
+.resources h1{
+    color:#16a4cb;
+}
+
+.calendar h1{
+    color:#16a4cb;
+}
+
+.contact h1{
+    
+    color: #dde1e2;
+}
 p{
-    color: #2e4bd8;
+    
     font-size: 14px;
     font-weight: 300;
     line-height: 22px;
     padding: 10px;
+}
+
+.resources p{
+    color: #000000;
+}
+
+.about p{
+    color: #2e4bd8;
+}
+
+.event p{
+    color: #000000;
+}
+
+.about p{
+    color: #2e4bd8;
+}
+
+.contact p{
+    color: #ffffff;
 }
 .row{
     margin-top: 2%;
@@ -255,6 +303,10 @@ p{
     margin: auto;
     text-align: center;
     padding-top: 100px;
+}
+
+.presidents h3{
+    color:rgba(0, 14, 74, 0.7)
 }
 
 @media(max-width: 700px){
