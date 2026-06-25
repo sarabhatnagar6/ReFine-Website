@@ -1,4 +1,13 @@
 *{
+    box-sizing: border-box;
+}
+
+html, body {
+    width: 100%;
+    overflow-x: hidden;
+}
+
+*{
     margin: 0;
     padding: 0;
     font-family: "Poppins", sans-serif;
@@ -269,12 +278,7 @@ p{
     text-align: center;
     padding-top: 100px;
 }
-.calendar iframe{
-    width: 100%;
-    height: 600px;
-    border: none;
-    border-radius: 10px;
-}
+
 .calendar iframe{
     width: 80%;
     height: 600px;
@@ -282,14 +286,44 @@ p{
     border-radius: 10px;
     box-shadow: 0 4px 12px rgba(0,0,0,0.2);
 }
-
 .contact{
-    margin: 100px auto;
     width: 100%;
-    background-image: linear-gradient(rgba(4,9,30,0.7), rgba(27, 37, 81, 0.7)), url("aqua-green-background.jpg");
-    border-radius: 10px;
-    text-align: center;
-    padding: 100px 20px;
+    margin: 0;
+    padding: 80px 50px;
+    background: linear-gradient(rgba(4,9,30,0.7), rgba(27, 37, 81, 0.7)), url("aqua-green-background.jpg");
+    background-size: cover;
+    background-position: center;
+}
+.contact-container{
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    max-width: 1200px;
+    margin: auto;
+    gap: 40px;
+}
+
+
+
+
+
+
+
+
+
+
+
+@media(max-width:700px){
+    .contact-container{
+        flex-direction: column;
+        text-align: center;
+        gap: 30px;
+    }
+
+    .contact-left,
+    .contact-right{
+        text-align: center;
+    }
 }
 
 .contact h1{
@@ -313,6 +347,10 @@ p{
     .cta h1{
         font-size: 24px;
     }
+     .text-box h3{
+        font-size: 18px;
+    }
+
 }
 
 html{
@@ -334,4 +372,111 @@ html {
 }
 section {
     scroll-margin-top: 90px;
+}
+
+.founder-photos img{
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+    border-radius: 12px;
+    margin-top: 15px;
+}
+.presidents .course-col{
+    padding: 30px 20px;
+}
+
+.course-col{
+    box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+}
+
+.contact{
+    width: 100%;
+    padding: 80px 50px;
+    background: linear-gradient(rgba(4,9,30,0.7), rgba(27, 37, 81, 0.7)),
+    url("aqua-green-background.jpg");
+    background-size: cover;
+    background-position: center;
+}
+
+.contact-container{
+    max-width: 1200px;
+    margin: auto;
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    gap: 40px;
+}
+
+.contact-col{
+    flex: 1;
+    color: white;
+}
+
+
+.contact-col h1{
+    margin: 0 0 15px 0;
+}
+
+.contact-col.center{
+    text-align: center;
+}
+
+
+.contact-col.right{
+    text-align: right;
+}
+
+.contact-col img{
+    width: 90px;
+    margin-bottom: 10px;
+}
+
+
+.contact-col p{
+    margin: 0;
+    line-height: 1.8;
+}
+
+.contact-col a{
+    color: white;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+.contact-col a:hover{
+    text-decoration: underline;
+}
+@media(max-width:700px){
+    .contact-container{
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .contact-col{
+        text-align: center;
+    }
+}
+
+.contact-col h1,
+.contact-col h3{
+    margin: 0;
+}
+
+.contact-col h1,
+.contact-col h3{
+    margin-bottom: 15px;
+}
+
+.contact-container{
+    display: flex;
+    align-items: flex-start;
+}
+.contact-left h1{
+    font-size: 28px;
+    line-height: 1;
+}
+
+.contact-center h3{
+    font-size: 22px;
+    line-height: 1;
 }
