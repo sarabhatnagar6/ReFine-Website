@@ -501,5 +501,17 @@ section {
         flex-direction: column;
         gap: 10px;
         align-items: flex-start;
+        }
+
+    .contact-col.right{
+        align-items: center;
+        text-align: center;
+    }
+
+    .contact-col.right img{
+        margin: 0 auto 10px auto;
+        display: block;
     }
 }
+
+
