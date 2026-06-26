@@ -313,16 +313,30 @@ p{
 
 
 
-@media(max-width:700px){
-    .contact-container{
+@media (max-width: 700px) {
+    .contact-container {
         flex-direction: column;
+        align-items: center;
         text-align: center;
         gap: 30px;
     }
 
-    .contact-left,
-    .contact-right{
+    .contact-col {
+        width: 100%;
         text-align: center;
+    }
+
+    .contact-col p {
+        margin: 0;
+    }
+
+    .contact-col h1,
+    .contact-col h3 {
+        margin-bottom: 10px;
+    }
+
+    .contact-col.right img {
+        margin: 0 auto 10px auto;
     }
 }
 
@@ -479,4 +493,13 @@ section {
 .contact-center h3{
     font-size: 22px;
     line-height: 1;
+}
+
+@media (max-width: 768px) {
+    .contact {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        align-items: flex-start;
+    }
 }
